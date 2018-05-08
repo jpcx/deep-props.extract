@@ -1,4 +1,4 @@
-# [deep-props](/README.md).extract
+# [deep-props](https://github.com/jpcx/deep-props/blob/0.2.0/README.md).extract
 
 [![NPM](https://nodei.co/npm/deep-props.extract.png)](https://nodei.co/npm/deep-props.extract/)
 
@@ -8,13 +8,13 @@ Endpoints may be previously discovered object references, primitives, or objects
 
 Avoids recursion by using a task queue; very deep objects may be traversed without hitting the stack limit.
 
-Any unsupported data structure may be accessed by supplying a customizer function. See [the global docs](/libs/extract/docs/global.md#~PropsCustomizer).
+Any unsupported data structure may be accessed by supplying a customizer function. See [the global docs](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~PropsCustomizer).
 
 Circular references or otherwise duplicate references to objects will be signified using a 'ref' property, rather than a value. See the [return details](#~PropAt).
 
 ## Getting Started
 
-The following installation, testing, and deployment instructions assume that deep-props.extract will be installed as a standalone module. For instructions on how to install and test all deep-props modules, please [refer to the main README](/README.md). Functionality of the module remains the same in both cases.
+The following installation, testing, and deployment instructions assume that deep-props.extract will be installed as a standalone module. For instructions on how to install and test all deep-props modules, please [refer to the main README](https://github.com/jpcx/deep-props/blob/0.2.0/README.md). Functionality of the module remains the same in both cases.
 
 ### Prerequisites
 
@@ -153,8 +153,8 @@ extract(data, { stepwise: true, descriptors: true, permissions: true })
 ## Documentation
 
 ### See:
-* [API Docs](/libs/extract/docs/API.md)
-* [Global Docs](/libs/extract/docs/global.md)
+* [API Docs](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/API.md)
+* [Global Docs](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md)
 
 ### Module: extract
 
@@ -164,12 +164,12 @@ Creates an array of deep paths and properties associated with an object. Non-rec
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `host` | [deep-props~Host](/docs/global.md#~Host) |  |  | Object to unpack. |
-| `opt` | [deep-props.extract~Options](#~Options) | \<optional> | {} | Execution settings. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Host) |  |  | Object to unpack. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | \<optional> | {} | Execution settings. |
 
 Source:
 
-*   [libs/extract/index.js](/libs/extract/index.js), [line 919](/libs/extract/index.js#L919)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.1/index.js), [line 919](https://github.com/jpcx/deep-props.extract/blob/0.1.1/index.js#L919)
 
 ##### Returns:
 
@@ -177,7 +177,7 @@ Array of paths and values or references. Returns Search generator if opt.gen is 
 
 Type
 
-Array.<[deep-props.extract~PropAt](#~PropAt)> | [deep-props~ResultGenerator](/docs/global.md#~ResultGenerator)
+Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~PropAt)> | [deep-props~ResultGenerator](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~ResultGenerator)
 
 <a name="~Options"></a>
 #### Options
@@ -201,7 +201,11 @@ Execution-wide settings supplied to the module. Modifies types of data attached 
 | `includeRefValues` | boolean | \<optional> |  | Whether or not to attach a value to Props with Refs attached. |
 | `gen` | boolean | \<optional> |  | Whether or not to return a generator instead of executing the entire search. |
 | `full` | boolean | \<optional> |  | If true, replaces undefined Options with maximum search settings (All options except for propsCustomizer will be set to true). User supplied options supercede any changes here. |
-| `propsCustomizer` | [deep-props.extract~PropsCustomizer](/libs/extract/docs/global.md#~PropsCustomizer) | \<optional> |  | Function used for custom extraction of PropEntries from a Target. |
+| `propsCustomizer` | [deep-props.extract~PropsCustomizer](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~PropsCustomizer) | \<optional> |  | Function used for custom extraction of PropEntries from a Target. |
+
+Source:
+
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.1/index.js), [line 126](https://github.com/jpcx/deep-props.extract/blob/0.1.1/index.js#L126)
 
 <a name="~PropAt"></a>
 #### PropAt
@@ -216,8 +220,8 @@ Description of a given level of the chain. Transformed Prop Object with location
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `host` | [deep-props~Host](/docs/global.md#~Host) | \<optional> | When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host. |
-| `path` | Array.<[deep-props~Key](/docs/global.md#~Key)> |  | Describes the steps taken from the Host in order to reach the Prop's value. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Host) | \<optional> | When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host. |
+| `path` | Array.<[deep-props~Key](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Key)> |  | Describes the steps taken from the Host in order to reach the Prop's value. |
 | `value` | * | \<optional> | Value described at the Prop's location (if any). In cases of a previously discovered reference (circular or otherwise), value will be replaced with a ref property (unless opt.showRefValues is true). |
 | `writable` | boolean | \<optional> | 'Writable' property descriptor of the value. |
 | `enumerable` | boolean | \<optional> | 'Enumerable' property descriptor of the value. |
@@ -225,11 +229,15 @@ Description of a given level of the chain. Transformed Prop Object with location
 | `parentIsFrozen` | boolean | \<optional> | Frozen status of the parent object. |
 | `parentIsSealed` | boolean | \<optional> | Sealed status of the parent object. |
 | `parentIsExtensible` | boolean | \<optional> | Extensible status of the parent object. |
-| `ref` | [deep-props.extract~Ref](/libs/extract/docs/global.md#~Ref) | \<optional> | If the value strictly equals a previously discovered Container, the path and Host (if applicable) of that Container will be provided. |
+| `ref` | [deep-props.extract~Ref](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Ref) | \<optional> | If the value strictly equals a previously discovered Container, the path and Host (if applicable) of that Container will be provided. |
+
+Source:
+
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.1/index.js), [line 98](https://github.com/jpcx/deep-props.extract/blob/0.1.1/index.js#L98)
 
 ## Versioning
 
-Versioned using [SemVer](http://semver.org/). For available versions, see the [Changelog](/libs/extract/CHANGELOG.md).
+Versioned using [SemVer](http://semver.org/). For available versions, see the [Changelog](https://github.com/jpcx/deep-props.extract/blob/0.1.1/CHANGELOG.md).
 
 ## Contribution
 
@@ -241,4 +249,4 @@ Please raise an issue if you find any. Pull requests are welcome!
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/jpcx/deep-props.extract/blob/0.1.1/LICENSE) file for details
