@@ -22,7 +22,7 @@ __Since: [deep-props 0.2.0](https://github.com/jpcx/deep-props/blob/0.2.0/CHANGE
 
 __Since: [deep-props 0.1.0](https://github.com/jpcx/deep-props/blob/0.2.0/CHANGELOG.md#0.1.0)__
 
-| [Release Notes](https://github.com/jpcx/deep-props/releases/tag/0.1.0) | [README](https://github.com/jpcx/deep-props/tree/0.1.0/libs/extract/README.md)
+| [Release Notes](https://github.com/jpcx/deep-props/releases/tag/0.1.0) | [README](https://github.com/jpcx/deep-props/blob/0.1.0/libs/extract/README.md)
 | --- | --- |
 
 | [Source Code (tgz)](https://registry.npmjs.org/deep-props.extract/-/deep-props.extract-0.1.0.tgz) |
