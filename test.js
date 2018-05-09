@@ -1473,16 +1473,18 @@ const run = module => {
   console.log('Total Tests Attempted: ' + totalTestsAttempt)
   console.log('Total Operational Failures: ' + numFailed)
 
-  return {
-    totalTestsAttempt,
-    numFailed,
-    errors
+  if (process.argv[2] === 'standalone') {
+    if (numFailed > 0) throw Error('Failed tests!')
+  } else {
+    return {
+      totalTestsAttempt,
+      numFailed,
+      errors
+    }
   }
 }
 
-const args = process.argv.slice(2)
-
-if (args[0] === 'standalone') {
+if (process.argv[2] === 'standalone') {
   run()
 }
 
