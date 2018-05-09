@@ -164,7 +164,7 @@ Creates an array of deep paths and properties associated with an object. Non-rec
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Host) |  |  | Object to unpack. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Host) |  |  | Object to unpack. |
 | `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | \<optional> | {} | Execution settings. |
 
 Source:
@@ -177,7 +177,7 @@ Array of paths and values or references. Returns Search generator if opt.gen is 
 
 Type
 
-Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~PropAt)> | [deep-props~ResultGenerator](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~ResultGenerator)
+Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~PropAt)> | [deep-props~ResultGenerator](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~ResultGenerator)
 
 <a name="~Options"></a>
 #### Options
@@ -220,8 +220,8 @@ Description of a given level of the chain. Transformed Prop Object with location
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Host) | \<optional> | When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host. |
-| `path` | Array.<[deep-props~Key](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Key)> |  | Describes the steps taken from the Host in order to reach the Prop's value. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Host) | \<optional> | When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host. |
+| `path` | Array.<[deep-props~Key](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Key)> |  | Describes the steps taken from the Host in order to reach the Prop's value. |
 | `value` | * | \<optional> | Value described at the Prop's location (if any). In cases of a previously discovered reference (circular or otherwise), value will be replaced with a ref property (unless opt.showRefValues is true). |
 | `writable` | boolean | \<optional> | 'Writable' property descriptor of the value. |
 | `enumerable` | boolean | \<optional> | 'Enumerable' property descriptor of the value. |

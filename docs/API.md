@@ -7,7 +7,7 @@ Creates an array of deep paths and properties associated with an object. Non-rec
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Host) |  |  | Object to unpack. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Host) |  |  | Object to unpack. |
 | `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | \<optional> | {} | Execution settings. |
 
 Source:
@@ -20,7 +20,7 @@ Array of paths and values or references. Returns Search generator if opt.gen is 
 
 Type
 
-Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~PropAt)> | [deep-props~ResultGenerator](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~ResultGenerator)
+Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~PropAt)> | [deep-props~ResultGenerator](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~ResultGenerator)
 
 ##### Examples
 
@@ -177,7 +177,7 @@ extract(data, { stepwise: true, descriptors: true, permissions: true })
 
 <hr>
 
-## [Home](/README.md)
+## [Home](https://github.com/jpcx/deep-props.extract/blob/0.1.1/README.md)
 
 ### Modules
 
@@ -186,6 +186,6 @@ extract(data, { stepwise: true, descriptors: true, permissions: true })
 
 ### Namespaces
 
-*   [deep-props](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md)
+*   [deep-props](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md)
 *   [extract](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md)
 *   [get](https://github.com/jpcx/deep-props.get/blob/0.1.0/docs/global.md)

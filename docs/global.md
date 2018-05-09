@@ -1,4 +1,4 @@
-# [deep-props](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md).extract
+# [deep-props](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md).extract
 
 Source:
 
@@ -16,8 +16,8 @@ Assigns reference points to a list of properties.
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
 | `props` | Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Prop)> |  |  | Prop array. |
-| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Host) | \<optional> |  | Host object. |
-| `path` | Array.<[deep-props~Key](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Key)> | \<optional> | \[\] | Path to current prop array. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Host) | \<optional> |  | Host object. |
+| `path` | Array.<[deep-props~Key](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Key)> | \<optional> | \[\] | Path to current prop array. |
 
 Source:
 
@@ -163,7 +163,7 @@ Generates a prop for a target object's prototype.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Container) | Target container. |
+| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Container) | Target container. |
 | `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Permissions) | Object permission statuses. |
 | `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | Execution settings. |
 
@@ -208,7 +208,7 @@ Gets a list of properties within a target Map.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Container) | Target container. |
+| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Container) | Target container. |
 | `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Permissions) | Object permission statuses. |
 | `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | Execution settings. |
 
@@ -263,7 +263,7 @@ Gets the frozen, sealed, and extensible statuses of an object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Container) | Target container. |
+| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Container) | Target container. |
 
 Source:
 
@@ -296,7 +296,7 @@ Generates a list of non-inherited properties of a target object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Container) | Target container. |
+| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Container) | Target container. |
 | `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Permissions) | Object permission statuses. |
 | `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | Execution settings. |
 
@@ -354,7 +354,7 @@ Returns all inherited properties, own properties, special properties, and object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Container) | Target container. |
+| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Container) | Target container. |
 | `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | Execution settings. |
 
 Source:
@@ -407,7 +407,7 @@ Gets a list of properties within a target Set. Uses insertion order as keys.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Container) | Target container. |
+| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Container) | Target container. |
 | `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Permissions) | Object permission statuses. |
 | `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | Execution settings. |
 
@@ -459,7 +459,7 @@ Gets any special object properties. If propsCustomizer is supplied, and returns 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Container) | Target container. |
+| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Container) | Target container. |
 | `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Permissions) | Object permission statuses. |
 | `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | Execution settings. |
 
@@ -699,7 +699,7 @@ Non-recursively searches through the host object by queueing its children. Attac
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Host) | Host container supplied to module. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Host) | Host container supplied to module. |
 | `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | Execution settings. |
 
 Source:
@@ -897,7 +897,7 @@ Description of the properties found for a given value during the search,
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `key` | [deep-props~Key](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Key) |  | Key used on the parent (Container) object to retrieve the value. |
+| `key` | [deep-props~Key](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Key) |  | Key used on the parent (Container) object to retrieve the value. |
 | `value` | * | \<optional> | Value described at the Prop's location (if any). In cases of a previously discovered reference (circular or otherwise), value will be replaced with a ref property (unless opt.showRefValues is true). |
 | `writable` | boolean | \<optional> | 'Writable' property descriptor of the value. |
 | `enumerable` | boolean | \<optional> | 'Enumerable' property descriptor of the value. |
@@ -938,8 +938,8 @@ Description of a given level of the chain. Transformed Prop Object with location
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Host) | \<optional> | When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host. |
-| `path` | Array.<[deep-props~Key](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Key)> |  | Describes the steps taken from the Host in order to reach the Prop's value. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Host) | \<optional> | When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host. |
+| `path` | Array.<[deep-props~Key](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Key)> |  | Describes the steps taken from the Host in order to reach the Prop's value. |
 | `value` | * | \<optional> | Value described at the Prop's location (if any). In cases of a previously discovered reference (circular or otherwise), value will be replaced with a ref property (unless opt.showRefValues is true). |
 | `writable` | boolean | \<optional> | 'Writable' property descriptor of the value. |
 | `enumerable` | boolean | \<optional> | 'Enumerable' property descriptor of the value. |
@@ -977,7 +977,7 @@ Function supplied in Options that handles Target objects and returns a descripto
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Container) | Container to analyze for additional children. |
+| `container` | [deep-props~Container](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Container) | Container to analyze for additional children. |
 
 Source:
 
@@ -1021,8 +1021,8 @@ Describes the location of a previously encountered target.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Host) | \<optional> | If Host is different than the supplied Host, it will be specified. |
-| `path` | Array.<[deep-props~Key](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md#~Key)> |  | Path of previously encountered target. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Host) | \<optional> | If Host is different than the supplied Host, it will be specified. |
+| `path` | Array.<[deep-props~Key](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Key)> |  | Path of previously encountered target. |
 
 Source:
 
@@ -1040,7 +1040,7 @@ Source:
 
 <hr>
 
-## [Home](/README.md)
+## [Home](https://github.com/jpcx/deep-props.extract/blob/0.1.1/README.md)
 
 ### Modules
 
@@ -1049,6 +1049,6 @@ Source:
 
 ### Namespaces
 
-*   [deep-props](https://github.com/jpcx/deep-props/blob/0.1.0/docs/global.md)
+*   [deep-props](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md)
 *   [extract](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md)
 *   [get](https://github.com/jpcx/deep-props.get/blob/0.1.0/docs/global.md)
