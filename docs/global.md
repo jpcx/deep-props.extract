@@ -1044,6 +1044,7 @@ Source:
 
 ### Modules
 
+*   [deep-props](https://github.com/jpcx/deep-props/blob/0.2.0/docs/API.md)
 *   [extract](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/API.md)
 *   [get](https://github.com/jpcx/deep-props.get/blob/0.1.0/docs/API.md)
 
