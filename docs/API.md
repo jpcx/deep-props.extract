@@ -7,12 +7,12 @@ Creates an array of deep paths and properties associated with an object. Non-rec
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/develop/docs/global.md#~Host) |  |  | Object to unpack. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/develop/docs/global.md#~Options) | \<optional> | {} | Execution settings. |
+| `host` | [deep-props~Host](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~Host) |  |  | Object to unpack. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~Options) | \<optional> | {} | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/develop/index.js), [line 919](https://github.com/jpcx/deep-props.extract/blob/develop/index.js#L919)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.1/index.js), [line 919](https://github.com/jpcx/deep-props.extract/blob/0.1.1/index.js#L919)
 
 ##### Returns:
 
@@ -20,7 +20,7 @@ Array of paths and values or references. Returns Search generator if opt.gen is 
 
 Type
 
-Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/develop/docs/global.md#~PropAt)> | [deep-props~ResultGenerator](https://github.com/jpcx/deep-props/blob/develop/docs/global.md#~ResultGenerator)
+Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md#~PropAt)> | [deep-props~ResultGenerator](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md#~ResultGenerator)
 
 ##### Examples
 
@@ -177,15 +177,15 @@ extract(data, { stepwise: true, descriptors: true, permissions: true })
 
 <hr>
 
-## [Home](https://github.com/jpcx/deep-props.extract/blob/develop/README.md)
+## [Home](https://github.com/jpcx/deep-props.extract/blob/0.1.1/README.md)
 
 ### Modules
 
-*   [extract](https://github.com/jpcx/deep-props.extract/blob/develop/docs/API.md)
-*   [get](https://github.com/jpcx/deep-props.get/blob/develop/docs/API.md)
+*   [extract](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/API.md)
+*   [get](https://github.com/jpcx/deep-props.get/blob/0.1.0/docs/API.md)
 
 ### Namespaces
 
-*   [deep-props](https://github.com/jpcx/deep-props/blob/develop/docs/global.md)
-*   [extract](https://github.com/jpcx/deep-props.extract/blob/develop/docs/global.md)
-*   [get](https://github.com/jpcx/deep-props.get/blob/develop/docs/global.md)
+*   [deep-props](https://github.com/jpcx/deep-props/blob/0.2.0/docs/global.md)
+*   [extract](https://github.com/jpcx/deep-props.extract/blob/0.1.1/docs/global.md)
+*   [get](https://github.com/jpcx/deep-props.get/blob/0.1.0/docs/global.md)
