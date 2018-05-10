@@ -2,7 +2,7 @@ Changelog
 =========
 
 <a name="0.1.1"></a>
-## [0.1.1](https://github.com/jpcx/deep-props.extract/tree/0.1.1) (2018-05-04)
+## [0.1.1](https://github.com/jpcx/deep-props.extract/tree/0.1.1) (2018-05-09)
 
 __Since: [deep-props 0.2.0](https://github.com/jpcx/deep-props/blob/0.2.0/CHANGELOG.md#0.2.0)__
 
@@ -16,6 +16,7 @@ __Since: [deep-props 0.2.0](https://github.com/jpcx/deep-props/blob/0.2.0/CHANGE
   + __extract:__ Moved to own repository.
   + __docs:__ Added changelog.
   + __docs:__ Added links to get module.
+  + __docs:__ Replaced relative links with GitHub links.
 
 <a name="0.1.0"></a>
 ## [0.1.0](https://github.com/jpcx/deep-props/blob/0.1.0/libs/extract) (2018-05-04)
