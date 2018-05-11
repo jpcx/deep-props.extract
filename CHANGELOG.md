@@ -1,6 +1,21 @@
 Changelog
 =========
 
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/jpcx/deep-props.extract/tree/0.1.4) (2018-05-11)
+
+__Since: [deep-props 0.2.4](https://github.com/jpcx/deep-props/blob/master/CHANGELOG.md#0.2.4)__
+
+| __[Changes since 0.1.3](https://github.com/jpcx/deep-props.extract/compare/0.1.3...0.1.4)__ | [Release Notes](https://github.com/jpcx/deep-props.extract/releases/tag/0.1.4) | [README](https://github.com/jpcx/deep-props.extract/tree/0.1.4/README.md) |
+| --- | --- | --- |
+
+| [Source Code (zip)](https://github.com/jpcx/deep-props.extract/archive/0.1.4.zip) | [Source Code (tar.gz)](https://github.com/jpcx/deep-props.extract/archive/0.1.4.tar.gz) |
+| --- | --- |
+
+#### Bugfixes
+  + __docs:__ Fixed version numbers.
+  + __NPM:__ Fixed version numbers.
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/jpcx/deep-props.extract/tree/0.1.3) (2018-05-11)
 
