@@ -9,6 +9,47 @@
 'use strict'
 
 /**
+ * Custom dataset for use as a <a href="#~Container">Container</a>. May be accessed via valid customizer functions.
+ *
+ * @typedef {*} deep-props.extract~Custom
+ * @example
+ * (() => {
+ *   class CustomDataStructure {
+ *     constructor(array) {
+ *       this.get = i => array[i]
+ *       this.getValues = () => array
+ *       this.push = x => array.push(x)
+ *     }
+ *   }
+ *   return new CustomDataStructure([ 'foo', 'bar' ])
+ * })()
+ */
+
+/**
+ * Key used for accessing a child property within a container. When its value is <code>'__proto__'</code>, it is used as a stand-in for <code>Object.getPrototypeOf()</code>.
+ *
+ * @typedef {(string|deep-props.extract~Container)} deep-props.extract~Key
+ */
+
+/**
+ * Container object used as a target for child property extraction.
+ *
+ * @typedef {(Object|Array|Map|WeakMap|Set|WeakSet|deep-props.extract~Custom)} deep-props.extract~Container
+ */
+
+/**
+ * A non-primitive <a href="#~Container">Container</a> which represents the root of a given path.
+ *
+ * @typedef {deep-props.extract~Container} deep-props.extract~Host
+ */
+
+/**
+ * Generator object which yields stepwise operation results.
+ *
+ * @typedef {Object} deep-props.extract~ResultGenerator
+ */
+
+/**
  * An Array of Arrays with Key at index 0 and property descriptors object at index 1.
  * <ul><li>Equivalent to the result of <code>Object.entries(Object.getOwnPropertyDescriptors(Target))</code>
  * <li> Only relevant property descriptors should be added.</ul>
@@ -32,7 +73,7 @@
  * Function supplied in Options that handles Target objects and returns a descriptor matrix of any children within a Custom container. Returns undefined if not applicable.
  *
  * @typedef {Function} deep-props.extract~PropsCustomizer
- * @param   {deep-props~Container} container - Container to analyze for additional children.
+ * @param   {deep-props.extract~Container} container - Container to analyze for additional children.
  * @returns {deep-props.extract~DescriptorEntries} Array of arrays of keys and property descriptor objects.
  * @example
  * target => {
@@ -62,8 +103,8 @@
  * Describes the location of a previously encountered target.
  *
  * @typedef  {Object} deep-props.extract~Ref
- * @property {deep-props~Host}   [host] - If Host is different than the supplied Host, it will be specified.
- * @property {deep-props~Key[]}  path   - Path of previously encountered target.
+ * @property {deep-props.extract~Host}   [host] - If Host is different than the supplied Host, it will be specified.
+ * @property {deep-props.extract~Key[]}  path   - Path of previously encountered target.
  * @example
  * { path: [ 'foo', 'bar' ] }
  * @example
@@ -74,7 +115,7 @@
  * Description of the properties found for a given value during the search,
  *
  * @typedef  {Object}  deep-props.extract~Prop
- * @property {deep-props~Key} key - Key used on the parent (Container) object to retrieve the value.
+ * @property {deep-props.extract~Key} key - Key used on the parent (Container) object to retrieve the value.
  * @property {*}       [value]        - Value described at the Prop's location (if any). In cases of a previously discovered reference (circular or otherwise), value will be replaced with a ref property (unless opt.showRefValues is true).
  * @property {boolean} [writable]     - 'Writable' property descriptor of the value.
  * @property {boolean} [enumerable]   - 'Enumerable' property descriptor of the value.
@@ -100,8 +141,8 @@
  *
  * @typedef  {Object}  deep-props.extract~PropAt
  * @memberof deep-props.extract
- * @property {deep-props~Host} [host] - When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host.
- * @property {deep-props~Key[]} path - Describes the steps taken from the Host in order to reach the Prop's value.
+ * @property {deep-props.extract~Host} [host] - When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host.
+ * @property {deep-props.extract~Key[]} path - Describes the steps taken from the Host in order to reach the Prop's value.
  * @property {*}       [value]        - Value described at the Prop's location (if any). In cases of a previously discovered reference (circular or otherwise), value will be replaced with a ref property (unless opt.showRefValues is true).
  * @property {boolean} [writable]     - 'Writable' property descriptor of the value.
  * @property {boolean} [enumerable]   - 'Enumerable' property descriptor of the value.
@@ -193,7 +234,7 @@ const isPrimitive = x => (
  * Gets the frozen, sealed, and extensible statuses of an object.
  *
  * @memberof deep-props.extract
- * @param   {deep-props~Container} container - Target container.
+ * @param   {deep-props.extract~Container}   container - Target container.
  * @returns {deep-props.extract~Permissions} Result of the three Object permissions tests.
  * @example
  * // returns {
@@ -272,10 +313,10 @@ const genPropsFromDescriptorEntries = (descriptorEntries, permissions, opt) => (
  * Generates a prop for a target object's prototype.
  *
  * @memberof deep-props.extract
- * @param   {deep-props~Container} container - Target container.
- * @param   {deep-props.extract~Permissions} permissions - Object permission statuses.
+ * @param   {deep-props.extract~Container}   container   - Target container.
+ * @param   {deep-props.extract~Permissions} permissions - Object permissions.
  * @param   {deep-props.extract~Options}     opt         - Execution settings.
- * @returns {deep-props.extract~Prop[]} Array with single entry of '__proto__' key and value.
+ * @returns {deep-props.extract~Prop[]}      Array with single entry of '__proto__' key and value.
  * @example
  * // returns [
  * //   {
@@ -308,8 +349,8 @@ const genProtoProp = (container, permissions, opt) => (
  * Generates a list of non-inherited properties of a target object.
  *
  * @memberof deep-props.extract
- * @param   {deep-props~Container} container - Target container.
- * @param   {deep-props.extract~Permissions} permissions - Object permission statuses.
+ * @param   {deep-props.extract~Container}   container   - Target container.
+ * @param   {deep-props.extract~Permissions} permissions - Object permissions.
  * @param   {deep-props.extract~Options}     opt         - Execution settings.
  * @returns {deep-props.extract~Prop[]}      Array of associated properties.
  * @example
@@ -367,10 +408,10 @@ const getOwnProps = (container, permissions, opt) => (
  * Gets a list of properties within a target Map.
  *
  * @memberof deep-props.extract
- * @param   {deep-props~Container} container - Target container.
- * @param   {deep-props.extract~Permissions} permissions - Object permission statuses.
+ * @param   {deep-props.extract~Container}   container   - Target container.
+ * @param   {deep-props.extract~Permissions} permissions - Object permissions.
  * @param   {deep-props.extract~Options} opt - Execution settings.
- * @returns {deep-props.extract~Prop[]} Array of associated properties.
+ * @returns {deep-props.extract~Prop[]}  Array of associated properties.
  * @example
  * // returns [
  * //   {
@@ -424,10 +465,10 @@ const getMapProps = (container, permissions, opt) => (
  * Uses insertion order as keys.
  *
  * @memberof deep-props.extract
- * @param   {deep-props~Container} container - Target container.
- * @param   {deep-props.extract~Permissions} permissions - Object permission statuses.
- * @param   {deep-props.extract~Options} opt - Execution settings.
- * @returns {deep-props.extract~Prop[]} Array of associated properties.
+ * @param   {deep-props.extract~Container}   container   - Target container.
+ * @param   {deep-props.extract~Permissions} permissions - Object permissions.
+ * @param   {deep-props.extract~Options}     opt - Execution settings.
+ * @returns {deep-props.extract~Prop[]}      Array of associated properties.
  * @example
  * // returns [
  * //   {
@@ -478,10 +519,10 @@ const getSetProps = (container, permissions, opt) => (
  * If propsCustomizer is supplied, and returns a defined value from target, then getSpecialProps will return this value.
  *
  * @memberof deep-props.extract
- * @param   {deep-props~Container} container - Target container.
- * @param   {deep-props.extract~Permissions} permissions - Object permission statuses.
+ * @param   {deep-props.extract~Container}   container   - Target container.
+ * @param   {deep-props.extract~Permissions} permissions - Object permissions.
  * @param   {deep-props.extract~Options} opt - Execution settings.
- * @returns {deep-props.extract~Prop[]} Array of associated properties.
+ * @returns {deep-props.extract~Prop[]}  Array of associated properties.
  * @example
  * const map = new Map(
  *   [
@@ -607,9 +648,9 @@ const getSpecialProps = (container, permissions, opt) => {
  * Returns all inherited properties, own properties, special properties, and object permissions.
  *
  * @memberof deep-props.extract
- * @param   {deep-props~Container} container - Target container.
- * @param   {deep-props.extract~Options} opt - Execution settings.
- * @returns {deep-props.extract~Prop[]} Array of associated properties.
+ * @param   {deep-props.extract~Container} container - Target container.
+ * @param   {deep-props.extract~Options}   opt - Execution settings.
+ * @returns {deep-props.extract~Prop[]}    Array of associated properties.
  * @example
  * const map = new Map(
  *   [
@@ -664,9 +705,9 @@ const getProps = (container, opt) => {
  * Assigns reference points to a list of properties.
  *
  * @memberof deep-props.extract
- * @param   {deep-props.extract~Prop[]}   props - Prop array.
- * @param   {deep-props~Host}  [host]     - Host object.
- * @param   {deep-props~Key[]} [path=[]]  - Path to current prop array.
+ * @param   {deep-props.extract~Prop[]} props      - Prop array.
+ * @param   {deep-props.extract~Host}   [host]     - Host object.
+ * @param   {deep-props.extract~Key[]}  [path=[]]  - Path to current prop array.
  * @returns {deep-props.extract~PropAt[]} Array of location-tagged Props.
  * @example
  * let props = [
@@ -749,9 +790,9 @@ const assignReferencePoints = (props, host, path = []) => (
  *
  * @generator
  * @memberof deep-props.extract
- * @param   {deep-props~Host} host - Host container supplied to module.
- * @param   {deep-props.extract~Options} opt  - Execution settings.
- * @yields  {deep-props.extract~PropAt}  Current Prop with attached location.
+ * @param   {deep-props.extract~Host} host - Host container supplied to module.
+ * @param   {deep-props.extract~Options} opt - Execution settings.
+ * @yields  {deep-props.extract~PropAt} Current Prop with attached location.
  * @returns {undefined} Undefined if done.
  * @example
  * // Searching through an Object
@@ -920,9 +961,9 @@ const mergeOptions = opt => {
  * Creates an array of deep paths and properties associated with an object. Non-recursively iterates through unpacked children until an endpoint is reached. Optionally traverses prototypes and non-enumerable properties. Endpoints may be previously discovered object references, primitives, or objects without children.
  *
  * @module   extract
- * @param    {deep-props~Host}            host     - Object to unpack.
+ * @param    {deep-props.extract~Host}    host     - Object to unpack.
  * @param    {deep-props.extract~Options} [opt={}] - Execution settings.
- * @return   {(deep-props.extract~PropAt[]|deep-props~ResultGenerator)} Array of paths and values or references. Returns Search generator if opt.gen is true.
+ * @return   {(deep-props.extract~PropAt[]|deep-props.extract~ResultGenerator)} Array of paths and values or references. Returns Search generator if opt.gen is true.
  * @example
  * // Simple nested object
  *
