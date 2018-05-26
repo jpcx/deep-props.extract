@@ -958,7 +958,7 @@ const mergeOptions = opt => {
 }
 
 /**
- * Creates an array of deep paths and properties associated with an object. Non-recursively iterates through unpacked children until an endpoint is reached. Optionally traverses prototypes and non-enumerable properties. Endpoints may be previously discovered object references, primitives, or objects without children.
+ * Non-recursively creates an array of deep paths and properties within an object. Optionally unpacks prototypes and non-enumerable property descriptors. Supports Objects, Arrays, Maps, and Sets.
  *
  * @module   extract
  * @param    {deep-props.extract~Host}    host     - Object to unpack.
