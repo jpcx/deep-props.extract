@@ -1,6 +1,6 @@
 /**
  * @author Justin Collier <jpcxme@gmail.com>
- * @see {@link http://github.com/jpcx/deep-props|GitHub}
+ * @see {@link http://github.com/jpcx/deep-props.extract|GitHub}
  * @license MIT
  */
 
@@ -1369,7 +1369,7 @@ tests.push(() => {
  *
  * @private
  * @exports run
- * @param   {deep-props.extract} module - Module to use for testing. Used when testing entire package.
+ * @param   {deep-props.extract} module - Module to use for testing. Used when testing entire deep-props package.
  * @returns {TestResults} Results of tests.
  */
 const run = module => {
@@ -1416,7 +1416,7 @@ const run = module => {
         process.stdout.write('\nExpected:\n')
         dirDeep(op.expect)
         process.stdout.write('\nResult:\n')
-        dirDeep(op.result())
+        dirDeep(result)
         if (assertion === true) {
           console.log(ANSI_GREEN + '[OK]' + ANSI_RESET)
         } else {
