@@ -1,7 +1,7 @@
 /**
  * @author Justin Collier <jpcxme@gmail.com>
  * @license MIT
- * @see {@link http://github.com/jpcx/deep-props|GitHub}
+ * @see {@link http://github.com/jpcx/deep-props.extract|GitHub}
  */
 
 /** @namespace deep-props.extract */

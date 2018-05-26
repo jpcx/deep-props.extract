@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/deep-props.extract.png)](https://nodei.co/npm/deep-props.extract/)
 
-Creates an array of deep paths and properties associated with an object. Non-recursively iterates through deep objects until an endpoint is reached. Optionally unpacks prototypes and non-enumerable property descriptors. Supports Objects, Arrays, Maps, and Sets automatically.
+Non-recursively creates an array of deep paths and properties within an object. Optionally unpacks prototypes and non-enumerable property descriptors. Supports Objects, Arrays, Maps, and Sets.
 
 Endpoints may be previously discovered object references, primitives, or objects whose children are inaccessible due to settings or otherwise.
 
@@ -28,7 +28,7 @@ npm install deep-props.extract
 
 ### Testing
 
-The following command will test the package for errors. It prints a large selection of examples to the console; scroll through its output if you want to learn more about the utility.
+The following command will test the package for errors. It prints a selection of examples to the console; scroll through its output if you want to learn more about the utility.
 
 ```console
 npm test --prefix /path/to/node_modules/deep-props.extract
