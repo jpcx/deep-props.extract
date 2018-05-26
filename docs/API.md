@@ -7,12 +7,12 @@ Creates an array of deep paths and properties associated with an object. Non-rec
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.4/docs/global.md#~Host) |  |  | Object to unpack. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.4/docs/global.md#~Options) | \<optional> | {} | Execution settings. |
+| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Host) |  |  | Object to unpack. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | \<optional> | {} | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.4/index.js), [line 960](https://github.com/jpcx/deep-props.extract/blob/0.1.4/index.js#L960)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 960](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L960)
 
 ##### Returns:
 
@@ -20,7 +20,7 @@ Array of paths and values or references. Returns Search generator if opt.gen is 
 
 Type
 
-Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.4/docs/global.md#~PropAt)> | [deep-props.extract~ResultGenerator](https://github.com/jpcx/deep-props.extract/blob/0.1.4/docs/global.md#~ResultGenerator)
+Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~PropAt)> | [deep-props.extract~ResultGenerator](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~ResultGenerator)
 
 ##### Examples
 
@@ -177,4 +177,4 @@ extract(data, { stepwise: true, descriptors: true, permissions: true })
 
 <hr>
 
-## [Home](https://github.com/jpcx/deep-props.extract/blob/0.1.4/README.md)
+## [Home](https://github.com/jpcx/deep-props.extract/blob/0.1.5/README.md)
