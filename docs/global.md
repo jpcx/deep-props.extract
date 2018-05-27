@@ -2,12 +2,12 @@
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 7](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L7)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 7](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L7)
 
 ### Methods
 
 <a name=".assignReferencePoints"></a>
-#### (static) assignReferencePoints(props, hostopt, pathopt) → \{Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~PropAt)>}
+#### (static) assignReferencePoints(props, hostopt, pathopt) → \{Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~PropAt)>}
 
 Assigns reference points to a list of properties.
 
@@ -15,13 +15,13 @@ Assigns reference points to a list of properties.
 
 | Name | Type | Attributes | Default | Description |
 | --- | --- | --- | --- | --- |
-| `props` | Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)> |  |  | Prop array. |
-| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Host) | \<optional> |  | Host object. |
-| `path` | Array.<[deep-props.extract~Key](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Key)> | \<optional> | \[\] | Path to current prop array. |
+| `props` | Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)> |  |  | Prop array. |
+| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Host) | \<optional> |  | Host object. |
+| `path` | Array.<[deep-props.extract~Key](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Key)> | \<optional> | \[\] | Path to current prop array. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 772](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L772)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 772](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L772)
 
 ##### Returns:
 
@@ -29,7 +29,7 @@ Array of location-tagged Props.
 
 Type
 
-Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~PropAt)>
+Array.<[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~PropAt)>
 
 ##### Examples
 
@@ -97,7 +97,7 @@ assignReferencePoints(props, { foo: 'bar' })
 ```
 
 <a name=".genPropsFromDescriptorEntries"></a>
-#### (static) genPropsFromDescriptorEntries(descriptorEntries, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>}
+#### (static) genPropsFromDescriptorEntries(descriptorEntries, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>}
 
 Converts list of descriptors to prop Array. Attaches information based on options.
 
@@ -105,13 +105,13 @@ Converts list of descriptors to prop Array. Attaches information based on option
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `descriptorEntries` | [deep-props.extract~DescriptorEntries](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~DescriptorEntries) | Matrix of keys and descriptors. |
-| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Permissions) | Permissions list. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | Execution settings. |
+| `descriptorEntries` | [deep-props.extract~DescriptorEntries](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~DescriptorEntries) | Matrix of keys and descriptors. |
+| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Permissions) | Permissions list. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options) | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 292](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L292)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 292](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L292)
 
 ##### Returns:
 
@@ -119,7 +119,7 @@ Converted 1D Array of properties.
 
 Type
 
-Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>
+Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>
 
 ##### Example
 
@@ -155,7 +155,7 @@ genPropsFromDescriptorEntries(
 ```
 
 <a name=".genProtoProp"></a>
-#### (static) genProtoProp(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>}
+#### (static) genProtoProp(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>}
 
 Generates a prop for a target object's prototype.
 
@@ -163,13 +163,13 @@ Generates a prop for a target object's prototype.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container) | Target container. |
-| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Permissions) | Object permissions. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | Execution settings. |
+| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container) | Target container. |
+| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Permissions) | Object permissions. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options) | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 337](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L337)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 337](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L337)
 
 ##### Returns:
 
@@ -177,7 +177,7 @@ Array with single entry of '\_\_proto\_\_' key and value.
 
 Type
 
-Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>
+Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>
 
 ##### Example
 
@@ -200,7 +200,7 @@ genProtoProp(
 ```
 
 <a name=".getMapProps"></a>
-#### (static) getMapProps(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>}
+#### (static) getMapProps(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>}
 
 Gets a list of properties within a target Map.
 
@@ -208,13 +208,13 @@ Gets a list of properties within a target Map.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container) | Target container. |
-| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Permissions) | Object permissions. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | Execution settings. |
+| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container) | Target container. |
+| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Permissions) | Object permissions. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options) | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 442](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L442)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 442](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L442)
 
 ##### Returns:
 
@@ -222,7 +222,7 @@ Array of associated properties.
 
 Type
 
-Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>
+Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>
 
 ##### Example
 
@@ -255,7 +255,7 @@ getMapProps(
 ```
 
 <a name=".getObjectPermissions"></a>
-#### (static) getObjectPermissions(container) → \{[deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Permissions)}
+#### (static) getObjectPermissions(container) → \{[deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Permissions)}
 
 Gets the frozen, sealed, and extensible statuses of an object.
 
@@ -263,11 +263,11 @@ Gets the frozen, sealed, and extensible statuses of an object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container) | Target container. |
+| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container) | Target container. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 246](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L246)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 246](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L246)
 
 ##### Returns:
 
@@ -275,7 +275,7 @@ Result of the three Object permissions tests.
 
 Type
 
-[deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Permissions)
+[deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Permissions)
 
 ##### Example
 
@@ -288,7 +288,7 @@ getObjectPermissions({})
 ```
 
 <a name=".getOwnProps"></a>
-#### (static) getOwnProps(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>}
+#### (static) getOwnProps(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>}
 
 Generates a list of non-inherited properties of a target object.
 
@@ -296,13 +296,13 @@ Generates a list of non-inherited properties of a target object.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container) | Target container. |
-| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Permissions) | Object permissions. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | Execution settings. |
+| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container) | Target container. |
+| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Permissions) | Object permissions. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options) | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 386](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L386)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 386](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L386)
 
 ##### Returns:
 
@@ -310,7 +310,7 @@ Array of associated properties.
 
 Type
 
-Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>
+Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>
 
 ##### Example
 
@@ -346,7 +346,7 @@ getOwnProps(
 ```
 
 <a name=".getProps"></a>
-#### (static) getProps(container, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>}
+#### (static) getProps(container, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>}
 
 Returns all inherited properties, own properties, special properties, and object permissions.
 
@@ -354,12 +354,12 @@ Returns all inherited properties, own properties, special properties, and object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container) | Target container. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | Execution settings. |
+| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container) | Target container. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options) | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 680](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L680)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 680](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L680)
 
 ##### Returns:
 
@@ -367,7 +367,7 @@ Array of associated properties.
 
 Type
 
-Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>
+Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>
 
 ##### Example
 
@@ -399,7 +399,7 @@ getProps(map, { inherited: true, descriptors: true, permissions: true })
 ```
 
 <a name=".getSetProps"></a>
-#### (static) getSetProps(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>}
+#### (static) getSetProps(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>}
 
 Gets a list of properties within a target Set. Uses insertion order as keys.
 
@@ -407,13 +407,13 @@ Gets a list of properties within a target Set. Uses insertion order as keys.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container) | Target container. |
-| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Permissions) | Object permissions. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | Execution settings. |
+| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container) | Target container. |
+| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Permissions) | Object permissions. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options) | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 496](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L496)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 496](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L496)
 
 ##### Returns:
 
@@ -421,7 +421,7 @@ Array of associated properties.
 
 Type
 
-Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>
+Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>
 
 ##### Example
 
@@ -451,7 +451,7 @@ getSetProps(
 ```
 
 <a name=".getSpecialProps"></a>
-#### (static) getSpecialProps(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>}
+#### (static) getSpecialProps(container, permissions, opt) → \{Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>}
 
 Gets any special object properties. If propsCustomizer is supplied, and returns a defined value from target, then getSpecialProps will return this value.
 
@@ -459,13 +459,13 @@ Gets any special object properties. If propsCustomizer is supplied, and returns 
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container) | Target container. |
-| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Permissions) | Object permissions. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | Execution settings. |
+| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container) | Target container. |
+| `permissions` | [deep-props.extract~Permissions](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Permissions) | Object permissions. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options) | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 630](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L630)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 630](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L630)
 
 ##### Returns:
 
@@ -473,7 +473,7 @@ Array of associated properties.
 
 Type
 
-Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Prop)>
+Array.<[deep-props.extract~Prop](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Prop)>
 
 ##### Examples
 
@@ -599,7 +599,7 @@ Determines if x is a JS primitive. Used to determine if a value should be unpack
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 224](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L224)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 224](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L224)
 
 ##### Returns:
 
@@ -624,7 +624,7 @@ isPrimitive({})
 ```
 
 <a name=".mergeOptions"></a>
-#### (static) mergeOptions(opt) → \{[deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options)}
+#### (static) mergeOptions(opt) → \{[deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options)}
 
 Merges supplied options with defaults.
 
@@ -632,11 +632,11 @@ Merges supplied options with defaults.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | Options passed to the module. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options) | Options passed to the module. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 931](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L931)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 931](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L931)
 
 ##### Returns:
 
@@ -644,7 +644,7 @@ Execution settings.
 
 Type
 
-[deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options)
+[deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options)
 
 ##### Examples
 
@@ -691,7 +691,7 @@ mergeOptions({ full: true, descriptors: false })
 ```
 
 <a name=".search"></a>
-#### (generator, static) search(host, opt) → \{[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~PropAt)}
+#### (generator, static) search(host, opt) → \{[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~PropAt)}
 
 Non-recursively searches through the host object by queueing its children. Attaches information based on options. Determines whether child should be unpacked by checking if it is a primitive. Keeps track of all object references encountered to avoid circular looping. Explores object keys via creation of a new Host.
 
@@ -699,12 +699,12 @@ Non-recursively searches through the host object by queueing its children. Attac
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Host) | Host container supplied to module. |
-| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Options) | Execution settings. |
+| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Host) | Host container supplied to module. |
+| `opt` | [deep-props.extract~Options](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Options) | Execution settings. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 844](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L844)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 844](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L844)
 
 ##### Returns:
 
@@ -720,7 +720,7 @@ Current Prop with attached location.
 
 Type
 
-[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~PropAt)
+[deep-props.extract~PropAt](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~PropAt)
 
 ##### Examples
 
@@ -783,11 +783,11 @@ Container object used as a target for child property extraction.
 
 ##### Type:
 
-*   Object | Array | Map | WeakMap | Set | WeakSet | [deep-props.extract~Custom](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Custom)
+*   Object | Array | Map | WeakMap | Set | WeakSet | [deep-props.extract~Custom](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Custom)
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 34](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L34)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 34](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L34)
 
 <a name="~Custom"></a>
 #### Custom
@@ -800,7 +800,7 @@ Custom dataset for use as a [Container](#~Container). May be accessed via valid 
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 11](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L11)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 11](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L11)
 
 ##### Example
 
@@ -831,7 +831,7 @@ An Array of Arrays with Key at index 0 and property descriptors object at index 
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 52](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L52)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 52](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L52)
 
 ##### Example
 
@@ -856,11 +856,11 @@ A non-primitive [Container](#~Container) which represents the root of a given pa
 
 ##### Type:
 
-*   [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container)
+*   [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container)
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 40](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L40)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 40](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L40)
 
 <a name="~Key"></a>
 #### Key
@@ -869,11 +869,11 @@ Key used for accessing a child property within a container. When its value is `'
 
 ##### Type:
 
-*   string | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container)
+*   string | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container)
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 28](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L28)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 28](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L28)
 
 <a name="~Options"></a>
 #### Options
@@ -897,11 +897,11 @@ Execution-wide settings supplied to the module. Modifies types of data attached 
 | `includeRefValues` | boolean | \<optional> |  | Whether or not to attach a value to Props with Refs attached. |
 | `gen` | boolean | \<optional> |  | Whether or not to return a generator instead of executing the entire search. |
 | `full` | boolean | \<optional> |  | If true, replaces undefined Options with maximum search settings (All options except for propsCustomizer will be set to true). User supplied options supercede any changes here. |
-| `propsCustomizer` | [deep-props.extract~PropsCustomizer](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~PropsCustomizer) | \<optional> |  | Function used for custom extraction of PropEntries from a Target. |
+| `propsCustomizer` | [deep-props.extract~PropsCustomizer](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~PropsCustomizer) | \<optional> |  | Function used for custom extraction of PropEntries from a Target. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 167](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L167)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 167](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L167)
 
 ##### Example
 
@@ -949,7 +949,7 @@ The result of the Object permissions tests for a Container object.
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 93](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L93)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 93](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L93)
 
 <a name="~Prop"></a>
 #### Prop
@@ -964,7 +964,7 @@ Description of the properties found for a given value during the search,
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `key` | [deep-props.extract~Key](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Key) |  | Key used on the parent (Container) object to retrieve the value. |
+| `key` | [deep-props.extract~Key](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Key) |  | Key used on the parent (Container) object to retrieve the value. |
 | `value` | * | \<optional> | Value described at the Prop's location (if any). In cases of a previously discovered reference (circular or otherwise), value will be replaced with a ref property (unless opt.showRefValues is true). |
 | `writable` | boolean | \<optional> | 'Writable' property descriptor of the value. |
 | `enumerable` | boolean | \<optional> | 'Enumerable' property descriptor of the value. |
@@ -975,7 +975,7 @@ Description of the properties found for a given value during the search,
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 114](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L114)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 114](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L114)
 
 ##### Example
 
@@ -1005,8 +1005,8 @@ Description of a given level of the chain. Transformed Prop Object with location
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Host) | \<optional> | When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host. |
-| `path` | Array.<[deep-props.extract~Key](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Key)> |  | Describes the steps taken from the Host in order to reach the Prop's value. |
+| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Host) | \<optional> | When a non-primitive key has been encountered, a separate chain will be created with that key. Items on that chain will be labeled with a 'host' property to specify which host the path applies to. PropAt Objects lacking a 'host' property imply that the path applies to the initially supplied Host. |
+| `path` | Array.<[deep-props.extract~Key](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Key)> |  | Describes the steps taken from the Host in order to reach the Prop's value. |
 | `value` | * | \<optional> | Value described at the Prop's location (if any). In cases of a previously discovered reference (circular or otherwise), value will be replaced with a ref property (unless opt.showRefValues is true). |
 | `writable` | boolean | \<optional> | 'Writable' property descriptor of the value. |
 | `enumerable` | boolean | \<optional> | 'Enumerable' property descriptor of the value. |
@@ -1014,11 +1014,11 @@ Description of a given level of the chain. Transformed Prop Object with location
 | `parentIsFrozen` | boolean | \<optional> | Frozen status of the parent object. |
 | `parentIsSealed` | boolean | \<optional> | Sealed status of the parent object. |
 | `parentIsExtensible` | boolean | \<optional> | Extensible status of the parent object. |
-| `ref` | [deep-props.extract~Ref](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Ref) | \<optional> | If the value strictly equals a previously discovered Container, the path and Host (if applicable) of that Container will be provided. |
+| `ref` | [deep-props.extract~Ref](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Ref) | \<optional> | If the value strictly equals a previously discovered Container, the path and Host (if applicable) of that Container will be provided. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 139](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L139)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 139](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L139)
 
 ##### Example
 
@@ -1036,7 +1036,7 @@ Source:
 ```
 
 <a name="~PropsCustomizer"></a>
-#### PropsCustomizer(container) → \{[deep-props.extract~DescriptorEntries](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~DescriptorEntries)}
+#### PropsCustomizer(container) → \{[deep-props.extract~DescriptorEntries](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~DescriptorEntries)}
 
 Function supplied in Options that handles Target objects and returns a descriptor matrix of any children within a Custom container. Returns undefined if not applicable.
 
@@ -1044,11 +1044,11 @@ Function supplied in Options that handles Target objects and returns a descripto
 
 | Name | Type | Description |
 | --- | --- | --- |
-| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Container) | Container to analyze for additional children. |
+| `container` | [deep-props.extract~Container](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Container) | Container to analyze for additional children. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 72](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L72)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 72](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L72)
 
 ##### Returns:
 
@@ -1056,7 +1056,7 @@ Array of arrays of keys and property descriptor objects.
 
 Type
 
-[deep-props.extract~DescriptorEntries](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~DescriptorEntries)
+[deep-props.extract~DescriptorEntries](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~DescriptorEntries)
 
 ##### Example
 
@@ -1088,12 +1088,12 @@ Describes the location of a previously encountered target.
 
 | Name | Type | Attributes | Description |
 | --- | --- | --- | --- |
-| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Host) | \<optional> | If Host is different than the supplied Host, it will be specified. |
-| `path` | Array.<[deep-props.extract~Key](https://github.com/jpcx/deep-props.extract/blob/0.1.5/docs/global.md#~Key)> |  | Path of previously encountered target. |
+| `host` | [deep-props.extract~Host](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Host) | \<optional> | If Host is different than the supplied Host, it will be specified. |
+| `path` | Array.<[deep-props.extract~Key](https://github.com/jpcx/deep-props.extract/blob/0.1.6/docs/global.md#~Key)> |  | Path of previously encountered target. |
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 102](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L102)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 102](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L102)
 
 ##### Examples
 
@@ -1116,8 +1116,8 @@ Generator object which yields stepwise operation results.
 
 Source:
 
-*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js), [line 46](https://github.com/jpcx/deep-props.extract/blob/0.1.5/index.js#L46)
+*   [deep-props.extract/index.js](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js), [line 46](https://github.com/jpcx/deep-props.extract/blob/0.1.6/index.js#L46)
 
 <hr>
 
-## [Home](https://github.com/jpcx/deep-props.extract/blob/0.1.5/README.md)
+## [Home](https://github.com/jpcx/deep-props.extract/blob/0.1.6/README.md)
